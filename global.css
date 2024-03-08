@@ -1,0 +1,97 @@
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+a, button {
+    cursor: revert;
+    text-decoration: none;
+    color: rgb(60 255 208);
+}
+
+ol, ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 70%; 
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    /* margin-top: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.logo {
+    font-size: 2rem;
+}
+.logo-span {
+    color: rgb(60 255 208);
+}
+
+/* Hero Styles */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    max-height: 100vh;
+    max-width: 90%; 
+    margin-top: 3rem;
+}
+.hero-img {
+    width: 250px; 
+    height: 180px; 
+    border-radius: 10px;
+}
+/* About Styles */
+
+/* Projects Styles */
+
+#projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

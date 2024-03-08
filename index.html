@@ -3,43 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
     <title>Intro HTML CSS</title>
 </head>
 <body>
-
     <header>
-        <div class="logo">lentio.dev</div>
+        <div class="logo">lentio<span class="logo-span">.dev</span></div>
         <nav class="navbar">
             <ul class="nav-items">
-                <li class="nav-item"><a href="/navigate/projects.html">Projects</a></li>
-                <li class="nav-item"><a href="/navigate/blog.html">Blog</a></li>
-                <li class="nav-item"><a href="/navigate/about.html">About</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
+        <section class="hero">
             <img class="hero-img" src="./images/coding-dog.jpeg" alt="a happy dog coding">
-            <h1 class="hero-title">Hello there!!</h1>
-            <h2 class="hero-subtitle">I am Lentio</h2>
-            <p class="hero-text">I am a javascript developer..</p>
-            <button class="btn-projects"><a href="/navigate/projects.html" target="_blank">See Projects</a></button>
-            <button class="btn-posts"><a href="#posts" target="_blank">See Posts</a></button>
+            <div class="hero-text">
+            <h1 class="hero-title">Hey there! I'm Lentio.</h1>
+            <p class="hero-parag">I'm a passionate software developer specializing in JavaScript, Node and React.</p>
+            <div class="web-icons">
+
+            </div>
         </div>
-        <article class="posts">
-            <h2 class="">All Posts</h2>
-            <ol id="posts">
-                <li>Post</li>
-                <li>Post</li>
-                <li>Post</li>
-                <li>Post</li>
-                <li>Post</li>
-            </ol>
-        </article>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>I've been fascinated by how things work since I was a kid. That curiosity naturally led me to software development, where I love the endless possibilities for creation. I'm particularly skilled in Javascript. Outside of work, I'm often tinkering with coding😀.</p>
+        </section>
+        <section id="projects">
+                <div>
+                   <h3>Interactive Calculator</h3>
+                   <p>Basic HTML/CSS, JavaScript DOM manipulation for buttons and display, mathematical operations.</p>
+                </div>
+                <div>
+                    <h3>To-Do List App</h3>
+                    <p>Data storage (local storage or arrays), DOM manipulation to add/remove items, marking tasks as complete.</p>
+                </div>
+                <div>
+                    <h3>Quiz Game</h3>
+                    <p>Arrays/objects to store questions and answers, logic for scoring, randomizing question order.</p>
+                </div>
+                <div>
+                    <h3>Weather App</h3>
+                    <p>Working with APIs OpenWeatherMap, fetching and displaying data, handling user location input.</p>
+                </div>
+                <div>
+                    <h3>Drawing App</h3>
+                    <p>HTML5 Canvas API, event listeners for mouse/touch input, tool selection (color, brush size).</p>
+                </div>
+                <div>
+                    <h3>Simple 2D Game</h3>
+                    <p>Canvas API, game loop, collision detection, keyboard controls.</p>
+                </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+        </section>
     </main>
     <footer>
-        <h3 class="footer-text">Build with <span>&#128155;</span> by lentio </h3>
+        <p class="footer-text">Build with <span>&#128155;</span> in UK using HTML and CSS</p>
     </footer>
     
 </body>
